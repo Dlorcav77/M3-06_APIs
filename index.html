@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.8.0/Chart.js"></script>
+
+    <link rel="stylesheet" href="assets/css/style.css">
+
+<title>Document</title>
+</head>
+<body>
+    <hr>
+    <h1 class="text-white">Conversor de monedas Nacional</h1>
+    <hr>
+    <main>
+        <div class="card m-5 bg-secondary text-white" style="width: 18rem;" id="content">
+            <div class="card-body text-center">
+                <h5 class="card-title">Pesos CLP</h5>
+                <input id="clp" placeholder="Ingrese el monto en CLP" type="number" class="mt-2" min="0" required>
+                <h6 class="card-title mt-3">Monedas a CONVERTIR</h6>
+                <select name="" id="money" class=" mt-2" required>
+                    <option value="">seleccione un color</option>
+                </select>
+                <button id="btnCal" class="btn btn-primary mt-4">Calcular Total</button>
+                <div id="result" class="text-center ms-4 mt-2">...</div>
+            </div>
+        </div>
+    </main>
+    <canvas id="grafico"></canvas>
+    <script src="assets/js/app.js"></script>
+</body>
+</html>
